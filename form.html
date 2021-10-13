@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon3.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form design </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            width:100vw;
+            overflow: hidden;
+            font-family: sans-serif;
+            font-weight:700 ;
+            display: flex;
+            justify-content: center;
+            color: #555;
+            background-color:#ecf0f3;
+           
+        }
+        .login-div {
+            margin-top: 30px;
+            width: 430px;
+            height: 530px;
+            padding: 60px 35px 35px 35px;
+            border-radius: 40px;
+            background-color:#ecf0f3;
+            box-shadow: 13px 13px 20px rgb(209, 209, 209),
+            -13px -13px 20px #fff;
+            
+        }
+        .logo{
+            background: url(images/favicon3.png);
+            background-repeat: no-repeat;
+            width: 50px;
+            height:50px;
+            border:2px solid rgb(219, 222, 247);
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 2px #d33737,
+            0px 0px 0px 5px #325774,
+            8px 8px 15px #d364d3,
+            -8px -8px -8px rgb(97, 49, 49);
+        }
+        .titlt{
+            text-align: center;
+            font-size:24px;
+            padding-top: 16px;
+            letter-spacing: .5px; 
+        }
+        .sub-title{
+            text-align: center;
+            font-size: 15px;
+            padding-top: 7px;
+            letter-spacing: 2px;
+            margin-bottom: 17px;
+        }
+        .fields{
+            width: 100%;
+            padding-top: 75px 5px 5px 5px;
+        }
+        .fields input{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 12px;
+            color: #555;
+            padding: 8px 4px 8px 2px;
+        }
+      
+      .fast-name, .last-name,.password,.con-password, .email{
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: inset 4px 4px 4px #cbced1,inset
+            -10px -10px 8px #fff;
+            margin-top:8px;
+
+        }
+      .register{
+           letter-spacing:.5px;
+             font-size: 17px;
+              width: 40vh;
+              height:5vh;
+              border: none;
+              background-color:rgb(94, 148, 247) ;
+              border-radius: 10px;
+              color: #ffffff;
+              transition: .5s;
+      }
+      .register:hover{
+             background-color:rgb(242, 94, 247) ;
+              color: #ffffff;
+      }
+      .register:active{
+              background-color:rgb(9, 177, 65) ;
+              color: #ffffff;
+      }
+      .btn{
+          text-align: center;
+          
+      }
+        .icone{
+           margin-left: 10px;
+            width: 12px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+   
+        <div class="login-div">
+            <div class="logo"></div>
+            <div class="titlt">Web development</div>
+            <div class="sub-title">Create by! Rony Ahmed</div>
+            <div class="fields">
+                <div class="fast-name">
+                    <img class="icone" src="images/user.png" alt="">
+                    <input class="user-input" type="fast-name" placeholder="Fast Name">
+                </div>
+                <div class="last-name">
+                    <img class="icone" src="images/user.png" alt="">
+                    <input class="user-input" type="last-name" placeholder="Last Name">
+                </div>
+                <div class="email">
+                    <img class="icone" src="images/mail.png" alt="">
+                    <input class="user-input" type="email" placeholder="Email">
+                </div>
+                <div class="password">
+                    <img class="icone" src="images/padlock.png" alt="">
+                    <input class="pass-input" type="password" placeholder="Password">
+                </div>
+                <div class="con-password">
+                    <img class="icone" src="images/padlock.png" alt="">
+                    <input class="pass-input" type="password" placeholder="Conform Password">
+                </div>
+            </div>
+            <div class="btn"><button class="register">Register</button></div>
+           
+        </div>
+
+</body>
+</html>
